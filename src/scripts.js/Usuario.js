@@ -1,5 +1,16 @@
 export default function Usuario() {
     return (
-        alert("pra não dar erro")
+    <User imgs="./img/catanacomics.svg" name="catanacomics" subName=" Catana"/>
+    )
+}
+function User(props){
+    return(
+        <div className="usuario">  
+        <img src={props.imgs} />
+        <div className="texto">
+          <strong>{props.name}</strong>
+         {props.subName}
+        </div>
+      </div>
     )
 }

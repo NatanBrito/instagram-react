@@ -7,6 +7,9 @@ import Icones from "./scripts.js/Icones";
 import IconesMobile from "./scripts.js/IconesMobile";
 import Stories from "./scripts.js/Stories";
 import Setinha from "./scripts.js/Setinha";
+import Posts from "./scripts.js/Posts";
+import Usuario from "./scripts.js/Usuario"
+import TituloSugestao from "./TituloSugestao";
 function App() {
     return (
       <>
@@ -22,9 +25,16 @@ function App() {
       </div>
       <div className="corpo">
         <div className="esquerda">
-         <Stories />
-         <Setinha /> 
-        </div>  
+         {/* <Stories /> */}
+         <Setinha />
+         <Posts />
+        </div>
+        <div className="sidebar">
+        <Usuario />
+        <div className="sugestoes">
+        <TituloSugestao />
+        </div>
+        </div>
       </div>
       </>
     );
