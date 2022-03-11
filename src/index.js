@@ -10,6 +10,10 @@ import Setinha from "./scripts.js/Setinha";
 import Posts from "./scripts.js/Posts";
 import Usuario from "./scripts.js/Usuario"
 import TituloSugestao from "./TituloSugestao";
+import Sugestao from "./scripts.js/Sugestao";
+import Links from "./scripts.js/Links";
+import Copyright from "./scripts.js/Copyright";
+import FundoMobile from "./scripts.js/FundoMobile";
 function App() {
     return (
       <>
@@ -25,17 +29,23 @@ function App() {
       </div>
       <div className="corpo">
         <div className="esquerda">
-         {/* <Stories /> */}
+        <div className="stories">
+         <Stories />
          <Setinha />
+         </div>
          <Posts />
         </div>
         <div className="sidebar">
         <Usuario />
         <div className="sugestoes">
         <TituloSugestao />
+        <Sugestao />
         </div>
+        <Links />
+        <Copyright />
         </div>
       </div>
+      <FundoMobile />
       </>
     );
   }

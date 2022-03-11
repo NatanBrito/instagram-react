@@ -1,25 +1,25 @@
 export default function Stories() {
     return (
-        <div className="stories">
-            <Story imgs="./img/9gag.svg" nameUsuario="9gag" />
-            <Story imgs="./img/meowed.svg" nameUsuario="meowed" />
-            <Story imgs="./img/barked.svg" nameUsuario="barked" />        
-            <Story imgs="./img/nathanwpylestrangeplanet.svg" nameUsuario="nathanwpylestrangeplanet" />
-            <Story imgs="./img/wawawicomics.svg" nameUsuario="wawawicomics" />
-            <Story imgs="./img/respondeai.svg" nameUsuario="respondeai" />
-            <Story imgs="./img/filomoderna.svg" nameUsuario="filomoderna" />
-            <Story imgs="./img/memeriagourmet.svg" nameUsuario="memeriagourmet" />
-        </div>
+        <>  
+            <Story urlImagem="./img/wawawicomics.svg" nameUsuario="9gag"  titulo="xx"/>
+            <Story urlImagem="./img/meowed.svg" nameUsuario="meowed" titulo="xx" />
+            <Story urlImagem="./img/barked.svg" nameUsuario="barked" titulo="xx" />        
+            <Story urlImagem="./img/nathanwpylestrangeplanet.svg" nameUsuario="nathanwpylestrangeplanet" titulo="xx" />
+            <Story urlImagem="./img/wawawicomics.svg" nameUsuario="wawawicomics" titulo="xx" />
+            <Story urlImagem="./img/respondeai.svg" nameUsuario="respondeai"  titulo="xx"/>
+            <Story urlImagem="./img/filomoderna.svg" nameUsuario="filomoderna" titulo="xx" />
+            <Story urlImagem="./img/memeriagourmet.svg" nameUsuario="memeriagourmet" titulo="xx"/>
+        </>
     )
 }
 function Story(props){
-    <div className="story">
+  return(  <div className="story">
         <div className="imagem">
-            <img src={props.imgs} alt="imagem story"/>
+        <img src={props.urlImagem} alt={props.titulo} />
         </div>
         <div className="usuario">
-            {props.name}
+            {props.nameUsuario}
         </div>
-    </div>
-    
+    </div> 
+  ) 
 }
