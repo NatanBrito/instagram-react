@@ -9,7 +9,7 @@ import Stories from "./scripts.js/Stories";
 import Setinha from "./scripts.js/Setinha";
 import Posts from "./scripts.js/Posts";
 import Usuario from "./scripts.js/Usuario"
-import TituloSugestao from "./TituloSugestao";
+import TituloSugestao from "./scripts.js/TituloSugestao";
 import Sugestao from "./scripts.js/Sugestao";
 import Links from "./scripts.js/Links";
 import Copyright from "./scripts.js/Copyright";
