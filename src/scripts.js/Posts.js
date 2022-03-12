@@ -1,4 +1,7 @@
 export default function Posts(){
+  const infos=[{
+    topoImg:"./img/meowed.svg",iconName:"ellipsis-horizontal",conteudoImg:"./img/gato-telefone.svg",
+    curtidaImg:"./img/respondeai.svg",curtidaName:"respondeai",like:101.523}]
     return(
         <div className="posts">
         <div className="post">

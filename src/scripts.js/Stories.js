@@ -1,25 +1,39 @@
 export default function Stories() {
-    return (
-        <>  
-            <Story urlImagem="./img/wawawicomics.svg" nameUsuario="9gag"  titulo="xx"/>
-            <Story urlImagem="./img/meowed.svg" nameUsuario="meowed" titulo="xx" />
-            <Story urlImagem="./img/barked.svg" nameUsuario="barked" titulo="xx" />        
-            <Story urlImagem="./img/nathanwpylestrangeplanet.svg" nameUsuario="nathanwpylestrangeplanet" titulo="xx" />
-            <Story urlImagem="./img/wawawicomics.svg" nameUsuario="wawawicomics" titulo="xx" />
-            <Story urlImagem="./img/respondeai.svg" nameUsuario="respondeai"  titulo="xx"/>
-            <Story urlImagem="./img/filomoderna.svg" nameUsuario="filomoderna" titulo="xx" />
-            <Story urlImagem="./img/memeriagourmet.svg" nameUsuario="memeriagourmet" titulo="xx"/>
-        </>
-    )
-}
-function Story(props){
-  return(  <div className="story">
+    const objStory=[{url:"./img/wawawicomics.svg", nameUsuario:"9gag"},
+    {url:"./img/meowed.svg", nameUsuario:"meowed"},
+    {url:"./img/barked.svg", nameUsuario:"barked"},
+    {url:"./img/nathanwpylestrangeplanet.svg", nameUsuario:"nathanwpylestrangeplanet"},
+    {url:"./img/wawawicomics.svg", nameUsuario:"wawawicomics" },
+    {url:"./img/respondeai.svg" , nameUsuario:"respondeai"},
+    {url:"./img/filomoderna.svg", nameUsuario:"filomoderna"},
+    {url:"./img/memeriagourmet.svg", nameUsuario:"memeriagourmet"}
+]
+return (
+    <>  
+       {objStory.map(item=>{
+           return(
+        <div className="story">
         <div className="imagem">
-        <img src={props.urlImagem} alt={props.titulo} />
+        <img src={item.url} alt="xx" />
         </div>
         <div className="usuario">
-            {props.nameUsuario}
+            {item.nameUsuario}
         </div>
-    </div> 
-  ) 
+       </div>          
+       )
+       }
+       )}
+    </>
+)
+}
+function Story(props){     //quero fazer funcionar como a Manu fez na Aula
+return(  <div className="story">
+    <div className="imagem">
+    <img src={props.item} alt="xx" />
+    </div>
+    <div className="usuario">
+        {props.nameUsuario}
+    </div>
+</div> 
+) 
 }

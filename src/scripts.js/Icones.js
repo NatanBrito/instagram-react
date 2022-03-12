@@ -1,10 +1,9 @@
 export default function Icones(){
+    const icons=["paper-plane-outline","compass-outline","heart-outline","person-outline"]
+    
     return(
         <div className="icones">
-          <LoopIcon name="paper-plane-outline" />
-          <LoopIcon name="compass-outline" />
-          <LoopIcon name="heart-outline" />
-          <LoopIcon name="person-outline" />    
+          {icons.map(icon => <ion-icon name={icon}></ion-icon>)}
           </div>
     )
 }
