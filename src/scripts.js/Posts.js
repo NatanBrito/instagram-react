@@ -18,11 +18,16 @@ export default function Posts(){
     }
     }]
     return(
-    infos.map((info) =>{
-        return(
-        <Post smallImg={info.user.smallImg} nameSmallImg={info.user.nameSmallImg} bigImg={info.user.bigImg}
-     likeImg={info.user.likeImg} likeName={info.user.likeName} likeNumber={info.user.likeNumber} />
-        )
-    })
+        <div class="posts">
+           {infos.map((info) =>{
+             return(
+              <Post smallImg={info.user.smallImg} nameSmallImg={info.user.nameSmallImg}
+              bigImg={info.user.bigImg}likeImg={info.user.likeImg}
+              likeName={info.user.likeName} likeNumber={info.user.likeNumber} />
+           )
+          }
+         )
+        }
+    </div>
     )
 }

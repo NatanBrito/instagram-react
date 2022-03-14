@@ -1,5 +1,4 @@
 export default function Post({smallImg,nameSmallImg,bigImg,likeImg,likeName,likeNumber}){
-
     return(
         <div className="post">
               <div className="topo">
@@ -11,11 +10,9 @@ export default function Post({smallImg,nameSmallImg,bigImg,likeImg,likeName,like
                   <ion-icon name="ellipsis-horizontal"></ion-icon>
                 </div>
               </div>
-
               <div className="conteudo">
                 <img src={bigImg} />
               </div>
-
               <div className="fundo">
                 <div className="acoes">
                   <div>
