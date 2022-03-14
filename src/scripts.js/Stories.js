@@ -1,3 +1,4 @@
+import Setinha from "./Setinha"
 export default function Stories() {
     const objStory=[{url:"./img/wawawicomics.svg", nameUsuario:"9gag"},
     {url:"./img/meowed.svg", nameUsuario:"meowed"},
@@ -9,7 +10,7 @@ export default function Stories() {
     {url:"./img/memeriagourmet.svg", nameUsuario:"memeriagourmet"}
 ]
 return (
-    <>  
+    <div className="stories">  
        {objStory.map(item=>{
            return(
         <div className="story">
@@ -23,7 +24,8 @@ return (
        )
        }
        )}
-    </>
+       <Setinha />
+    </div>
 )
 }
 function Story(props){     //quero fazer funcionar como a Manu fez na Aula

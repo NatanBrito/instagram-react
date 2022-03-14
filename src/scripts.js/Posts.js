@@ -7,15 +7,15 @@ export default function Posts(){
         likeImg:"./img/respondeai.svg",
         likeName:"respondeai",
         likeNumber:101.523
-    }},
-     {user:{
+     }},
+    {user:{
         smallImg:"./img/barked.svg",
         nameSmallImg:"barked",
         bigImg:"./img/dog.svg",
         likeImg:"./img/adorable_animals.svg",
         likeName:"adorable_animals",
         likeNumber:99.159
-    }
+     }
     }]
     return(
         <div class="posts">
